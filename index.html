@@ -12,9 +12,22 @@
     <div class="button-add"><button class="addBookBtn">Add Book</button></div>
     <div class="containerMain">
         <dialog id="createBookDialog">
-            
+            <h1 class="dialog-caption"></h1>
+            <form action="" method="post" id="bookForm" name="addBook">
+                <label for="title">Title<input type="text" id="title" name="title" required></label>
+                <label for="author">Author<input type="text" id="author" name="author"></label>
+                <label for="pages">Pages<input type="text" id = "pages" name="pages"></label>
+                <label for="readStatus">Read</label>
+                <input type="checkbox" id="readStatus" name="readStatus">
+                <div class="dialog-button">
+                    <button type="submit" id="submitButton">Create</button>
+                    <button type="button" id="cancelBtn">Cancel</button>
+                </div>
+            </form>
         </dialog>
-        <div class="books-container"></div>
+        <div class="books-container-wrapper">
+            <div class="books-container"></div>
+        </div>
     </div>
 </body>
 </html>

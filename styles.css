@@ -1,5 +1,60 @@
-#button1 {
-    font-size: 32px;
-    width: 100vw;
-    height: 100px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.books-container{
+    display: flex;
+    flex-basis: 100%;
+    flex-direction: row;
+    padding: 10px;
+    align-items: stretch;
+    justify-content: stretch;
+    background-color: lightgray;
+}
+
+.main-header {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.addBookBtn {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: lightblue;
+}
+
+.cards {
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+    align-items: center;
+    justify-content: center;
+    border: solid;
+}
+
+.readStatusContainer {
+    display: flex;
+    flex-basis: 100%;
+}
+
+#newReadCheckbox {
+    border: solid;
+    width: 100%;
+    height: 100%;
+
+}
+
+.books-container-wrapper {
+
 }
